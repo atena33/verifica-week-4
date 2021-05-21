@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link  rel="stylesheet" href="style.css"/>
+    <title>News</title>
+</head>
+<body onload=" disabled(); check();"  >
+    <nav>
+        <a href="HomePage.html">Home</a>
+    </nav>
+
+    <main class="news">
+
+        
+        <form onsubmit="save();">
+            <div id="form">
+                <label>Username</label>
+                <input type="text" id="name" onclick="save()"  oninput="enabled()" />
+
+                <input type="submit" value="Subscribe" id="submit"  />
+             </div>
+             <input type="submit" value=" Unsubcribe" id="unsubscribe" onclick="unsubscribe()" style=" display:none" />
+        </form>
+        
+
+
+    </main>
+
+
+    <footer>
+        <h2>Anna Mura</h2>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
